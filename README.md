@@ -20,7 +20,7 @@ A Frappe module for managing student enrollments, workflow approvals, reports, a
 Run the following commands in your Frappe Bench directory:
 
 # Get the app (if not already installed)
-bench get-app student_management
+bench get-app https://github.com/ArunGovind-246/student_management.git --branch master
 
 # Install it on your site
 bench --site yoursite install-app student_management
