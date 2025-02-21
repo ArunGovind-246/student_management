@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status == \"Approved\"",
+ "creation": "2025-02-21 21:46:25.412776",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Student Enrollment",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Dear {{ doc.student_name }},</p>\n                <p>Your enrollment for <b>{{ doc.course }}</b> has been <b>approved</b>.</p>\n                <p>Enrollment Date: {{ doc.enrollment_date }}</p>\n                <p>Thank you.</p>",
+ "message_type": "HTML",
+ "modified": "2025-02-21 21:46:25.412776",
+ "modified_by": "Administrator",
+ "module": "Student Management",
+ "name": "Student Enrollment Approved",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.status == \"Approved\"",
+   "receiver_by_document_field": "email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Arun Govind",
+ "sender_email": "me.arungovind@gmail.com",
+ "subject": "Your Enrollment has been Approved",
+ "value_changed": "status"
+}
