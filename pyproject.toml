@@ -1,0 +1,20 @@
+[project]
+name = "student_management"
+authors = [
+    { name = "Arun Govind", email = "me.arungovind@gmail.com"}
+]
+description = "Student Management System (SMS) is a comprehensive and user-friendly application designed to streamline academic administration. It enables educational institutions to efficiently manage student records, attendance, grades, and communication between students, teachers, and parents."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
