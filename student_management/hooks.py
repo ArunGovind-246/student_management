@@ -213,3 +213,10 @@ app_license = "Arun Govind"
 # auth_hooks = [
 # 	"student_management.auth.validate"
 # ]
+
+fixtures =[
+    {
+        "dt": "Role",
+        "filters": [["name", "in", ["Approver", "Student", "Enrollment Officer"]]]
+    }
+]
